@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1F5371115B8A1580092C8EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F5371015B8A1580092C8EE /* UIKit.framework */; };
+		B1F5371315B8A1580092C8EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F5371215B8A1580092C8EE /* Foundation.framework */; };
+		B1F5371515B8A1580092C8EE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F5371415B8A1580092C8EE /* CoreGraphics.framework */; };
+		B1F5371B15B8A1580092C8EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1F5371915B8A1580092C8EE /* InfoPlist.strings */; };
+		B1F5371D15B8A1580092C8EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F5371C15B8A1580092C8EE /* main.m */; };
+		B1F5372115B8A1580092C8EE /* NummusMainViewControllerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F5372015B8A1580092C8EE /* NummusMainViewControllerAppDelegate.m */; };
+		B1F5372415B8A1580092C8EE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1F5372215B8A1580092C8EE /* MainStoryboard.storyboard */; };
+		B1F5372715B8A1580092C8EE /* NummusMainViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F5372615B8A1580092C8EE /* NummusMainViewControllerViewController.m */; };
+		B1F5372F15B8A1590092C8EE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F5372E15B8A1590092C8EE /* SenTestingKit.framework */; };
+		B1F5373015B8A1590092C8EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F5371015B8A1580092C8EE /* UIKit.framework */; };
+		B1F5373115B8A1590092C8EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F5371215B8A1580092C8EE /* Foundation.framework */; };
+		B1F5373915B8A1590092C8EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1F5373715B8A1590092C8EE /* InfoPlist.strings */; };
+		B1F5373C15B8A1590092C8EE /* NummusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F5373B15B8A1590092C8EE /* NummusTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1F5373215B8A1590092C8EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1F5370315B8A1580092C8EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1F5370B15B8A1580092C8EE;
+			remoteInfo = Nummus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B1F5370C15B8A1580092C8EE /* Nummus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nummus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1F5371015B8A1580092C8EE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B1F5371215B8A1580092C8EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B1F5371415B8A1580092C8EE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B1F5371815B8A1580092C8EE /* Nummus-Info.plist */ = {isa = PBXFileReference; path = "Nummus-Info.plist"; sourceTree = "<group>"; };
+		B1F5371A15B8A1580092C8EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1F5371C15B8A1580092C8EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1F5371E15B8A1580092C8EE /* Nummus-Prefix.pch */ = {isa = PBXFileReference; path = "Nummus-Prefix.pch"; sourceTree = "<group>"; };
+		B1F5371F15B8A1580092C8EE /* NummusMainViewControllerAppDelegate.h */ = {isa = PBXFileReference; path = NummusMainViewControllerAppDelegate.h; sourceTree = "<group>"; };
+		B1F5372015B8A1580092C8EE /* NummusMainViewControllerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NummusMainViewControllerAppDelegate.m; sourceTree = "<group>"; };
+		B1F5372315B8A1580092C8EE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		B1F5372515B8A1580092C8EE /* NummusMainViewControllerViewController.h */ = {isa = PBXFileReference; path = NummusMainViewControllerViewController.h; sourceTree = "<group>"; };
+		B1F5372615B8A1580092C8EE /* NummusMainViewControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NummusMainViewControllerViewController.m; sourceTree = "<group>"; };
+		B1F5372D15B8A1590092C8EE /* NummusTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NummusTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1F5372E15B8A1590092C8EE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B1F5373615B8A1590092C8EE /* NummusTests-Info.plist */ = {isa = PBXFileReference; path = "NummusTests-Info.plist"; sourceTree = "<group>"; };
+		B1F5373815B8A1590092C8EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1F5373A15B8A1590092C8EE /* NummusTests.h */ = {isa = PBXFileReference; path = NummusTests.h; sourceTree = "<group>"; };
+		B1F5373B15B8A1590092C8EE /* NummusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NummusTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1F5370915B8A1580092C8EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F5371115B8A1580092C8EE /* UIKit.framework in Frameworks */,
+				B1F5371315B8A1580092C8EE /* Foundation.framework in Frameworks */,
+				B1F5371515B8A1580092C8EE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1F5372915B8A1590092C8EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F5372F15B8A1590092C8EE /* SenTestingKit.framework in Frameworks */,
+				B1F5373015B8A1590092C8EE /* UIKit.framework in Frameworks */,
+				B1F5373115B8A1590092C8EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1F5370115B8A1580092C8EE = {
+			isa = PBXGroup;
+			children = (
+				B1F5371615B8A1580092C8EE /* Nummus */,
+				B1F5373415B8A1590092C8EE /* NummusTests */,
+				B1F5370F15B8A1580092C8EE /* Frameworks */,
+				B1F5370D15B8A1580092C8EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1F5370D15B8A1580092C8EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1F5370C15B8A1580092C8EE /* Nummus.app */,
+				B1F5372D15B8A1590092C8EE /* NummusTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1F5370F15B8A1580092C8EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1F5371015B8A1580092C8EE /* UIKit.framework */,
+				B1F5371215B8A1580092C8EE /* Foundation.framework */,
+				B1F5371415B8A1580092C8EE /* CoreGraphics.framework */,
+				B1F5372E15B8A1590092C8EE /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1F5371615B8A1580092C8EE /* Nummus */ = {
+			isa = PBXGroup;
+			children = (
+				B1F5371F15B8A1580092C8EE /* NummusMainViewControllerAppDelegate.h */,
+				B1F5372015B8A1580092C8EE /* NummusMainViewControllerAppDelegate.m */,
+				B1F5372215B8A1580092C8EE /* MainStoryboard.storyboard */,
+				B1F5372515B8A1580092C8EE /* NummusMainViewControllerViewController.h */,
+				B1F5372615B8A1580092C8EE /* NummusMainViewControllerViewController.m */,
+				B1F5371715B8A1580092C8EE /* Supporting Files */,
+			);
+			path = Nummus;
+			sourceTree = "<group>";
+		};
+		B1F5371715B8A1580092C8EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1F5371815B8A1580092C8EE /* Nummus-Info.plist */,
+				B1F5371915B8A1580092C8EE /* InfoPlist.strings */,
+				B1F5371C15B8A1580092C8EE /* main.m */,
+				B1F5371E15B8A1580092C8EE /* Nummus-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1F5373415B8A1590092C8EE /* NummusTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1F5373A15B8A1590092C8EE /* NummusTests.h */,
+				B1F5373B15B8A1590092C8EE /* NummusTests.m */,
+				B1F5373515B8A1590092C8EE /* Supporting Files */,
+			);
+			path = NummusTests;
+			sourceTree = "<group>";
+		};
+		B1F5373515B8A1590092C8EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1F5373615B8A1590092C8EE /* NummusTests-Info.plist */,
+				B1F5373715B8A1590092C8EE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1F5370B15B8A1580092C8EE /* Nummus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1F5373F15B8A1590092C8EE /* Build configuration list for PBXNativeTarget "Nummus" */;
+			buildPhases = (
+				B1F5370815B8A1580092C8EE /* Sources */,
+				B1F5370915B8A1580092C8EE /* Frameworks */,
+				B1F5370A15B8A1580092C8EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nummus;
+			productName = Nummus;
+			productReference = B1F5370C15B8A1580092C8EE /* Nummus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1F5372C15B8A1590092C8EE /* NummusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1F5374215B8A1590092C8EE /* Build configuration list for PBXNativeTarget "NummusTests" */;
+			buildPhases = (
+				B1F5372815B8A1590092C8EE /* Sources */,
+				B1F5372915B8A1590092C8EE /* Frameworks */,
+				B1F5372A15B8A1590092C8EE /* Resources */,
+				B1F5372B15B8A1590092C8EE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1F5373315B8A1590092C8EE /* PBXTargetDependency */,
+			);
+			name = NummusTests;
+			productName = NummusTests;
+			productReference = B1F5372D15B8A1590092C8EE /* NummusTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1F5370315B8A1580092C8EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NummusMainViewController;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = B1F5370615B8A1580092C8EE /* Build configuration list for PBXProject "Nummus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B1F5370115B8A1580092C8EE;
+			productRefGroup = B1F5370D15B8A1580092C8EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1F5370B15B8A1580092C8EE /* Nummus */,
+				B1F5372C15B8A1590092C8EE /* NummusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1F5370A15B8A1580092C8EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F5371B15B8A1580092C8EE /* InfoPlist.strings in Resources */,
+				B1F5372415B8A1580092C8EE /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1F5372A15B8A1590092C8EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F5373915B8A1590092C8EE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B1F5372B15B8A1590092C8EE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1F5370815B8A1580092C8EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F5371D15B8A1580092C8EE /* main.m in Sources */,
+				B1F5372115B8A1580092C8EE /* NummusMainViewControllerAppDelegate.m in Sources */,
+				B1F5372715B8A1580092C8EE /* NummusMainViewControllerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1F5372815B8A1590092C8EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F5373C15B8A1590092C8EE /* NummusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1F5373315B8A1590092C8EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1F5370B15B8A1580092C8EE /* Nummus */;
+			targetProxy = B1F5373215B8A1590092C8EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1F5371915B8A1580092C8EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1F5371A15B8A1580092C8EE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B1F5372215B8A1580092C8EE /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1F5372315B8A1580092C8EE /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		B1F5373715B8A1590092C8EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1F5373815B8A1590092C8EE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1F5373D15B8A1590092C8EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B1F5373E15B8A1590092C8EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1F5374015B8A1590092C8EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nummus/Nummus-Prefix.pch";
+				INFOPLIST_FILE = "Nummus/Nummus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B1F5374115B8A1590092C8EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nummus/Nummus-Prefix.pch";
+				INFOPLIST_FILE = "Nummus/Nummus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B1F5374315B8A1590092C8EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Nummus.app/Nummus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nummus/Nummus-Prefix.pch";
+				INFOPLIST_FILE = "NummusTests/NummusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B1F5374415B8A1590092C8EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Nummus.app/Nummus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nummus/Nummus-Prefix.pch";
+				INFOPLIST_FILE = "NummusTests/NummusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1F5370615B8A1580092C8EE /* Build configuration list for PBXProject "Nummus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1F5373D15B8A1590092C8EE /* Debug */,
+				B1F5373E15B8A1590092C8EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1F5373F15B8A1590092C8EE /* Build configuration list for PBXNativeTarget "Nummus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1F5374015B8A1590092C8EE /* Debug */,
+				B1F5374115B8A1590092C8EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B1F5374215B8A1590092C8EE /* Build configuration list for PBXNativeTarget "NummusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1F5374315B8A1590092C8EE /* Debug */,
+				B1F5374415B8A1590092C8EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1F5370315B8A1580092C8EE /* Project object */;
+}
