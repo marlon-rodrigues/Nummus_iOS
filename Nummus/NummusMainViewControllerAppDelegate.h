@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IncomeExpensesData.h"
+#import "CategoryData.h"
+#import "AccountData.h"
 
 @interface NummusMainViewControllerAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+//Determine if the databse is or isn`t in the phone
+- (void) copyDataBaseIfNeeded;
+//Get the path of the database
+- (NSString *) getDBPath;
 
 @end

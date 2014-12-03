@@ -12,9 +12,56 @@
 
 @synthesize window = _window;
 
+#pragma mark - My methods
+//My Methods
+//*********************************************************************************************************************************************************
+- (void) copyDataBaseIfNeeded 
+{
+    //Using NSFileManager we can perfome many file system operations
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error;
+    
+    //Gets the path in phone that should contain the database
+    NSString *dbPath = [self getDBPath];
+    
+    //Check to see if exists in the phone
+    BOOL success = [fileManager fileExistsAtPath:dbPath];
+    
+    //If not, creates 
+    if (!success)
+    {
+        //Gets the database from the resources files in my project
+        NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"DBNummus.sqlite"];
+        success = [fileManager copyItemAtPath:defaultDBPath toPath:dbPath error:&error];
+        
+        if (!success)
+        {
+            NSAssert1(0, @"Failed to create writable database file with message '%@'", [error localizedDescription]);
+        }
+    }
+}
+
+- (NSString *) getDBPath
+{
+    //Search for standard documents using NSSearchPathForDirectionsInDomains
+    //First Param = Searching the documents directory
+    //Second Param = Searching the users directory and not the system
+    //Expand any tildes and identify home directories
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDir = [paths objectAtIndex:0];
+    return [documentsDir stringByAppendingPathComponent:@"DBNummus.sqlite"]; 
+}
+
+//*********************************************************************************************************************************************************
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    //My Code
+    //Copy database to the user`s phone if needed
+    [self copyDataBaseIfNeeded];
+    
     return YES;
 }
 							
@@ -43,6 +90,9 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    
+    //If there is any connection with the database open, close it
+    [IncomeExpensesData finalizeStatements];
 }
 
 @end
